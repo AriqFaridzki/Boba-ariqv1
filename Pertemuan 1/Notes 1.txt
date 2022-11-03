@@ -1,0 +1,10 @@
+front end : yaitu kodingan yang akan diproses ( render ) di browser langsung ( anggap aja furnitur di IKEA 
+tapi cuman dikasih bahannya doang )
+
+
+Back End : Yaitu kodingan yang akan diproses di server ( dikomputer lain ( CLI ) ) ntar klo udh jadi 
+tinggal tinggal langsung ditampil kan di browser tanpa di proses lagi ( render )
+
+Node.js (atau Deno), python, PHP ,
+
+dalam "javascript"

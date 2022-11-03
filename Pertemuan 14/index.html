@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document Object Model</title>
+  <style>
+    * {
+      border: 2px solid #000;
+      padding: 15px;
+      margin: 15px;
+    }
+
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      max-width: 600px;
+      margin: 30px auto;
+      font-family: sans-serif;
+      color: #333;
+      font-family: system-ui;
+      background: #f0e406;
+      text-align: center;
+    }
+
+    #b ol li:nth-child(odd){
+        background-color : red
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="title">Belajar DOM</h1>
+  <div class="container">
+    <section id="a">
+      <p class="p1">Class A</p>
+      <ol>
+        <li>
+          <a href="https://www.instagram.com/teguhagungprabowo/">Teguh Agung</a>
+        </li>
+        <li>Icksan</li>
+      </ol>
+    </section>
+    <section id="b">
+      <p class="p2">Class B</p>
+      <h4 id="section_title">Mentors :</h4>
+      <ol>
+        <li>Restu</li>
+        <li>Hotma</li>
+        <li>Hotma</li>
+        <li>Ariq</li>
+        <li>Megumin</li>
+        <li>Bruh</li>
+      </ol>
+      <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta dolorum, magni, dignissimos cum sequi libero enim animi earum, reprehenderit minus voluptatum quasi optio natus veniam quos labore nesciunt. Itaque!</p>
+    </section>
+  </div>
+
+  <script src="test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+dalam HTML, file yang akan dibaca secara otomatis duluan 
+adalah index.html, klo misalnya nama yang 
+lain maka harus di setting terdahulu
+
+Tag pembuka adalah <...> dan tag penutup adalah </...>
+
+kalau digabungkan tag pembuka dan tag penutup
+namanya TAG <..> .... </..>
+

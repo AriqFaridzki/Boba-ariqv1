@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            background-color: bisque;
+        }
+
+        table {
+            margin: auto;
+        }
+    
+        input[type=submit] {
+            background-color: yellowgreen;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+         input[type=reset] {
+            background-color: yellowgreen;
+            margin: 5px 5px 10px 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        fieldset {
+            margin: 10px 50px 10px 50px;
+            background-color: blanchedalmond;
+        }
+        
+        legend {
+            text-align: center;
+            text-decoration: solid;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+        <form action="">
+        <fieldset>
+        
+            <legend>FORM PENDAFTARAN</legend>
+        <table>
+            <tr>
+                <th colspan="2" align="center">Silahkan Mengisi Data Pendaftaran<br></BR></th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>: <input type="text" placeholder="Masukkan Username"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>: <input type="email" placeholder="Masukkan Email Aktif"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>: <input type="password" placeholder="Masukkan Password" maxlength="12"></td>
+            </tr>
+            <tr>
+                <td>Ulangi Password</td>
+                <td>: <input type="password" placeholder="Masukkan Password" maxlength="12"></td>
+            </tr>
+            <tr>
+                <td>No. Hp</td>
+                <td>: <input type="number" name="angka" pattern="[0-9" placeholder="Hanya Angka Saja"></td>
+            </tr>
+            <tr>
+                <td>Jenis Akun</td>
+            <td>:
+                <select>
+                    <option value="Jenis Akun" disabled selected>Pilih Salah Satu</option>
+                    <option value="Jenis Akun">Akun Penjual</option>
+                    <option value="Jenis Akun">Akun Pembeli</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td colspan="3" align="center"> <br> 
+                <input type="submit" value="Daftar">
+                <input type="reset" value="Reset"></td>
+            </tr>
+            <tr>
+                <th colspan="3">Sudah punya akun? <a href="">Login disini</a></th>
+            </tr>
+            
+        </table>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

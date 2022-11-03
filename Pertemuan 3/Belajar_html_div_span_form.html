@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV and SPAN</title>
+    lin
+
+<style>
+
+    .color-pink {
+        background-color: pink;
+    }
+
+    .color-bluelight {
+        background-color: rgb(192, 225, 255);
+    }
+
+    .color-toxic {
+        background-color: rgb(202, 250, 183);
+    }
+
+</style>
+
+</head>
+<body class="font-sans-serif">
+
+    <p><b>Tag Div Test (full Block)</b></p>
+    <div class="color-pink">This is Content</div>
+    <div class="color-bluelight">This is Content 2</div>
+
+    <hr>
+    <p><b>SPAN Test (inline Block)</b></p>
+
+    <span class="color-bluelight">Content 1</span>
+    <span class="color-toxic">Content 2</span>
+
+    <hr>
+
+    <p><b>Form Test</b></p>
+
+    <!-- ACTION => TUJUAN PENGIRIMAN DATA -->
+    <!-- METHOD => POST, GET -->
+
+    <label for="ariq1" style="border: 10px solid red;">
+        <input type="radio" name="type-nest" id="ariq1">
+    </label>
+    
+    <form action="" method="get"> <!--atribut get akan ditampilan di browser isi kontennya, sedangkan post tidak akan di tampilkan di browser isi kontennya-->
+
+        <fieldset> <!--digunakan untuk menampilkan border untuk di form-->
+            <legend>Isi Data Diri</legend> <!--digunakan untuk menampilkan nama di fieldset-->
+
+            <div>
+                <label for="input_idA">Nama</label> <!--Diklik dan akan otomatis ke input 'text'-->
+                <input type="text" name="nama" placeholder="Masukan  Nama" value="" id="input_idA" required>  <!-- digunakan untuk menampung kata  -->
+            </div>                                                                                            <!-- atribut 'required' digunakan untuk agar input itu wajib diisi  -->
+    
+            <div>
+                <label for="input_idB">Email</label> <!--Diklik dan akan otomatis ke input 'email'-->
+                <input type="email" name="email" placeholder="Johndoe@gmail.com" id="input_idB">  <!-- digunakan untuk menampung kata email-->
+            </div>
+    
+            <div>
+                <label for="input_idA">Password</label> <!--Diklik dan akan otomatis ke input 'text'-->
+                <input type="text" name="nama" placeholder="Masukan  Nama" value="" id="input_idA">  <!-- digunakan untuk menampung kata password-->
+            </div>
+    
+            <div>
+                <label for="input_idD">Jenis Kelamin</label> <!--Diklik dan akan otomatis ke input-->
+                <input type="radio" name="Jenis Kelamin" value="type boy" id="input_idD"> Laki-Laki  <!-- digunakan menceklis suatu konten (wajib menambahkan atribut value agar bisa membedakan) -->
+                <input type="radio" name="Jenis Kelamin" value="type girl" id="input_idD"> Perempuan <!-- digunakan menceklis suatu konten (dan atribute 'name' wajib sama agar bisa dikirim sesuai inputnya) -->
+    
+            </div>
+    
+            <div>
+                <label for="input_idE">Hobi</label> <!--Diklik dan akan otomatis ke input 'checkbox'-->
+                <input type="checkbox" name="Hobi" value="desain" id="input_idE" checked> design  <!-- sama seperti atribut 'radio' tapi valuenya sesuaikan kontennya dengan yang akan ditampilkan -->
+                <input type="checkbox" name="Hobi" value="ngoding" id="input_idE"> ngoding  <!-- -- -->
+    
+            </div>
+    
+            <div>
+                <label for="input_idF">Nomor Telepon</label> <!--Diklik dan akan otomatis ke input 'number'-->
+                <input type="number" name="no-telp" placeholder="0" min="0" max="100" id="input_idF">  <!-- digunakan untuk menampung konten angka-->
+            </div>
+    
+            <div>
+                <label for="input_idG">Date</label> <!--Diklik dan akan otomatis ke input 'date'-->
+                <input type="date" name="tanggal" id="input_idG">  <!-- digunakan untuk menampung konten tanggal-->
+            </div>
+    
+            <div>
+                <label for="input_idH">Time</label> <!--Diklik dan akan otomatis ke input 'time'-->
+                <input type="time" name="waktu" id="input_idH">  <!-- digunakan untuk menampung konten waktu-->
+            </div>
+    
+            <div>
+                <label for="input_idI">Hidden (ada tapi di hide )</label> <!--direkomendasikan tidak memakai label-->
+                <input type="Hidden"  name="hide" id="input_idI">  <!-- digunakan untuk menyimpan konten tersebut-->
+            </div>
+
+            <div>
+                <label for="input_idJ">Pendidikan</label> <!--Diklik dan akan otomatis ke input 'time'-->
+                <select  name="pendidikan" id="input_idJ">
+                    <option value="none" disabled selected >--Pilih--</option> <!-- atribut disabled dan selected digunakan untuk menampilkan data serta tidak bisa dipilih data itu sendiri-->
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA/MA/SMK">SMA/MA/SMK</option>
+                    <option value="Perguruan Tinggi">Perguruan Tinggi</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="input_idK">Genre Novel Yang disukai</label>
+                <input type="text" list="genre" name="genre"> <!--atribute 'list' harus sama dengan tag datalist atribute 'id'-->
+                <datalist id="genre">
+                    <option value="none" disabled selected >--Pilih--</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Action">Action</option>
+                    <option value="School">School</option>
+                    <option value="Isekai">Isekai</option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="input_idL">Posisi Jobdesk</label>
+                <select name="Jobdesk" id="input_idL">
+                <optgroup label="Web Development">
+                    <option value="none" disabled selected>--Pilih--</option>
+                    <option value="Jobdesk A">Jobdesk A</option> <!-- atribut disabled dan selected digunakan untuk menampilkan data serta tidak bisa dipilih data itu sendiri tetapi klo-->
+                    <option value="Jobdesk B">Jobdesk B</option>
+                    <option value="Jobdesk C">Jobdesk C</option>
+                </optgroup>
+
+                <optgroup label="Software Development">
+                    <option value="Jobdesk D">Jobdesk D</option>
+                    <option value="Jobdesk E">Jobdesk E</option>
+                    <option value="Jobdesk G">Jobdesk F</option>
+                </optgroup>    
+                </select>
+            </div>
+
+            <div>
+                <input type="button" name="tombol" id="input_idJ" value="Tombol Biasa">  <!-- digunakan untuk tombol apa saja-->
+                <input type="reset" name="tombol" id="input_idK" value="Tombol Reset">  <!-- digunakan untuk Reset For (ilangin semua konten)-->
+                <input type="submit" name="tombol" id="input_idL" value="Tombol Submit">  <!-- digunakan untuk Submit form sesuai dengan atribut form 'action' dan 'get'-->
+            </div>
+
+            <div>
+                <p>Comment</p>
+                <textarea name="comment" id="input_idM" cols="30" rows="10">
+    
+                </textarea> <!-- digunakan untuk menampung konten waktu-->
+            </div>
+
+        </fieldset>
+
+    
+    
+    </form>
+</body>
+</html>
+
+<!-- ctrl + space untuk menampilkan attribute dalam suatu tag-->

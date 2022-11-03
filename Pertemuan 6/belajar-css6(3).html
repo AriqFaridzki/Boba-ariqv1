@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar css display</title>
+</head>
+
+<style>
+
+    /* div{
+        text-align: center;
+    } */
+
+    p{
+        text-align: center;
+    }
+
+    .box{
+        /* display: inline-block;  */ /* sudah otomatis inline-block jika pake display:flex*/
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        /* padding: auto; */
+    }
+
+    .gray{
+        background-color: rgb(134, 134, 129);
+    }
+
+    .red{
+        background-color: lightcoral;
+    }
+
+    .yellow{
+        background-color: lightgoldenrodyellow;
+    }
+
+    .green{
+        background-color: lightseagreen;
+    }
+
+    .blue{
+        background-color: lightskyblue;
+    }
+
+    .newbox{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        position: fixed;
+        /* padding: auto; */
+        right: 0px;
+        bottom: 0px;
+
+        z-index: 1;
+    }
+
+    .newbox2{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        position: fixed;
+        padding: auto;
+        right: 10px;
+        bottom: 20px;
+
+        z-index: 2;
+    }
+
+    .sticky{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        
+        position: sticky;
+        top:0;
+        padding: auto;
+        z-index: 4;
+    }
+
+    .flex-parent{
+        display: flex;
+        
+        /* flex-direction: column;  */ /* kontent kebawah*/
+        /* flex-direction: column-reverse; */ /* kontent kebawah tapi terbalik urutannya*/
+        /* flex-direction: row; */ /*kontent kesamping*/
+        /*flex-direction: row-reverse; */ /* kontent kesamping tapi terbalik urutannya*/
+        
+        /* flex-wrap: wrap; */ /*buat ngetab aja klo yang lebih konten dari browser*/
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+
+</style>
+
+<body>
+
+    <a href="#"><div class="newbox blue">1</div></a>
+    <a href="#"><div class="newbox2 yellow">2</div></a>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ut sed modi deserunt distinctio quo nihil dolores officiis consectetur fugiat tenetur voluptatum iure, porro unde sit architecto debitis facilis officia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ut sed modi deserunt distinctio quo nihil dolores officiis consectetur fugiat tenetur voluptatum iure, porro unde sit architecto debitis facilis officia!</p>
+    <a href="#"><div class="sticky red">2</div></a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ut sed modi deserunt distinctio quo nihil dolores officiis consectetur fugiat tenetur voluptatum iure, porro unde sit architecto debitis facilis officia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ut sed modi deserunt distinctio quo nihil dolores officiis consectetur fugiat tenetur voluptatum iure, porro unde sit architecto debitis facilis officia!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ut sed modi deserunt distinctio quo nihil dolores officiis consectetur fugiat tenetur voluptatum iure, porro unde sit architecto debitis facilis officia!</p>
+
+    <div class="flex-parent">
+
+    <div class="box gray">
+        <p>1</p>
+    </div>
+
+    <div class="box yellow">
+        <p>2</p>
+    </div>
+
+    <div class="box red">
+        <p>3</p>
+    </div>
+
+    <div class="box green">
+        <p>4</p>
+    </div>
+
+    <div class="box blue">
+        <p>5</p>
+    </div>
+
+    <div class="box green">
+        <p>6</p>
+    </div>
+
+    <div class="box gray">
+        <p>1</p>
+    </div>
+
+    <div class="box yellow">
+        <p>2</p>
+    </div>
+
+    <div class="box red">
+        <p>3</p>
+    </div>
+
+    <div class="box green">
+        <p>4</p>
+    </div>
+
+    <div class="box blue">
+        <p>5</p>
+    </div>
+
+    <div class="box green">
+        <p>6</p>
+    </div>
+
+    <div class="box gray">
+        <p>1</p>
+    </div>
+
+    <div class="box yellow">
+        <p>2</p>
+    </div>
+
+    <div class="box red">
+        <p>3</p>
+    </div>
+
+    <div class="box green">
+        <p>4</p>
+    </div>
+
+    <div class="box blue">
+        <p>5</p>
+    </div>
+
+    <div class="box green">
+        <p>6</p>
+    </div>
+
+    
+
+</div>
+
+</body>
+</html>
+
+<!-- - 
+    
+block, ngisi full dan bisa berpengaruh terhadap height, width, dan padding
+
+inline, ngisi sebutuhnya dan tidak terpengaruh terhadap height, width, dan padding
+
+inline-block, ngisi sebutuhnya dan bisa berpengaruh terhadap height, width, dan padding -->

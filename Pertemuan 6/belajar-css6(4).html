@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative and absolute</title>
+</head>
+
+<style>
+
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+.box{
+        display: inline-block;
+        width: 50px;
+        height: 150px;
+        width: 150px;
+        margin: 5px;
+        padding: auto;
+    }
+
+    .gray{
+        background-color: rgb(134, 134, 129);
+    }
+
+    .red{
+        background-color: lightcoral;
+    }
+
+    .yellow{
+        background-color: lightgoldenrodyellow;
+    }
+
+    .green{
+        background-color: lightseagreen;
+    }
+
+    .blue{
+        background-color: lightskyblue;
+    }
+
+    .newbox{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        position: fixed;
+        padding: auto;
+        right: 0px;
+        bottom: 0px;
+
+        z-index: 1;
+    }
+
+    .newbox2{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        position: fixed;
+        padding: auto;
+        right: 10px;
+        bottom: 20px;
+
+        z-index: 2;
+    }
+
+    .relative{
+        position: relative;
+    }
+
+    .clock{
+        position: absolute;
+        bottom:0;
+        right: 0;
+
+        z-index: 4;
+
+        margin: 10px;
+        background-color: black;
+        color: white;
+        padding: 3px 3px;
+    }
+
+    .img{
+        background-image: url(https://resitdc.s3.ap-southeast-1.amazonaws.com/images/avatar/resitdc-2.jpg);
+        
+    }
+
+
+</style>
+<body>
+
+<div class="box red relative img">
+    <div class="clock">
+        08:00
+    </div>
+</div>
+    
+    
+</body>
+</html>
